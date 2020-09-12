@@ -1,21 +1,160 @@
-.meun {
-  .ulShop {
-    width: 200px;
-    .ulShopLi {
-      line-height: 50px;
-      height: 50px;
-      font-size: 14px;
-      text-align: center;
-      background-color:rgb(84, 92, 100);
-      font-weight: bold;
-      color: rgb(255, 255, 255);
+.navfull {
 
-      .service-arrow {
-        position: absolute;
-        right: 10px;
-        font-size: 12px;
+  // 菜单栏
+  .category-content {
+    position: relative;
+    width: 180px;
+    float: left;
+    z-index: 113;
+
+    .category {
+      width: 180px;
+      border: 1px solid #2b2b2b;
+      border-top: none;
+      background: #2b2b2b;
+      box-shadow: 8px 0 7px -3px rgba(0, 0, 0, .3);
+    }
+
+    .category-list li {
+      height: 40px;
+      margin-top: -2px;
+      z-index: 113;
+      border-top: 1px solid #333;
+      border-bottom: 1px solid #252525;
+
+      .hover .menu-in {
+        border: 1px solid #333;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #D2364C;
       }
     }
-    
+
+    //菜单背景
+    .category-info {
+      position: relative;
+      height: 100%;
+      padding-left: 12px;
+      width: 180px;
+      overflow: hidden;
+    }
+
+    //菜单背景颜色变化
+    .hover .category-info {
+      border: none;
+      text-decoration: none;
+      background: #fff;
+    }
+
+    //主菜单文字
+    .category-name {
+      overflow: hidden;
+      position: relative;
+      line-height: 32px;
+      padding-top: 3px;
+      padding-left: 5px;
+      color: #fff;
+
+      i img {
+        position: absolute;
+        top: 10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        left: 6px;
+        display: block;
+      }
+
+      .ml-22 {
+        font-size: 15px;
+        margin-left: 35px;
+      }
+    }
+
+    //主菜单文字变化
+    .hover .category-name {
+      color: #4c4c4c;
+    }
+
+    .menu-in {
+      display: none;
+    }
+
+    .menu-item {
+      left: 183px;
+      top: 0px;
+      position: absolute;
+      height: 100%;
+      z-index: 11;
+      padding: 0 0 0 2px;
+      width: 770px;
+      background: #fff;
+      border: none;
+      border: 1px solid #bbb;
+
+      .area-in {
+        position: relative;
+        z-index: 1;
+      }
+
+      .area-bg {
+        padding: 10px 0 10px 40px;
+      }
+
+      .bottom {
+        bottom: -2px;
+        *bottom: -6px;
+        *bottom: -7px;
+      }
+    }
+
+    .menu-srot {
+      width: 100%;
+      overflow: hidden;
+
+      .sort-side {
+        overflow: hidden;
+
+        dt {
+          margin-top: 5px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #db3e54;
+          text-align: left;
+        }
+
+        dd {
+          float: left;
+          margin: 2px 6px 4px 0;
+        }
+
+        dd a {
+          float: left;
+          width: auto;
+          letter-spacing: 0.5px;
+          line-height: 14px;
+          color: #888;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 3px 10px;
+          border: 1px solid #e6e6e6;
+        }
+
+        .hover dd a span.red {
+          color: #DB3E54;
+        }
+
+        .dl-sort {
+          float: left;
+          width: 50%;
+        }
+      }
+    }
+
   }
+
+
 }
