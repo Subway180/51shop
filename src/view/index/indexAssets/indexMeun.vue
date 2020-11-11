@@ -1,9 +1,18 @@
 <template>
-  <el-row class="indexMeun">
+  <div class="indexMeun">
+    <div class="classify"><span class="classifyName">全部分类</span></div>
+    <div class="classify"><span class="classifyName">首页</span></div>
+    <div class="classify"><span class="classifyName">首页</span></div>
+    <div class="classify"><span class="classifyName">首页</span></div>
+    <div class="classify"><span class="classifyName">首页</span></div>
+    <div class="classify"><span class="classifyName">首页</span></div>
+    <div class="classify"><span class="classifyName">首页</span></div>        
+    <el-row>
       <home-Meun></home-Meun>
       <home-Carousel></home-Carousel>
       <home-Message></home-Message>
-  </el-row>
+    </el-row>
+  </div>
 </template>
 <script>
 import meun from "./meun";
